@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NY Times API example</title>
+    
+    <link href="nytimes.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.js">
+    <link rel="stylesheet" type="text/css" href="semantic-ui.css">
+    
+    <script src="jquery.min.js"></script>
+    <script src="transition.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="visibility.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+    <div class="ui main text container">
+    <h1 class="ui header">Ref'Actualité</h1>
+    <p style="margin-left: 150px">Le site web de référence de site d'actualité à travers le monde</p>
+  </div>
+
+
+  <div class="ui borderless main menu" style="">
+    <div class="ui text container">
+      <div class="header item">
+        <img class="logo" src="logo.png">
+        New York Times
+      </div>
+      <a href="#" class="item">Blog</a>
+      <a href="#" class="item">Articles</a>
+      <a href="#" class="ui right floated dropdown item" tabindex="0">
+        Sites <i class="dropdown icon"></i>
+        <div class="menu" tabindex="-1">
+          <div class="item">Link Item</div>
+          <div class="item">Link Item</div>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <div class="item">Link Item</div>
+              <div class="item">Link Item</div>
+            </div>
+          </div>
+          <div class="item">Link Item</div>
+        </div>
+      </a>
+    </div>
+  </div><div class="ui borderless main menu placeholder" style="display: none;">
+    <div class="ui text container">
+      <div class="header item">
+        <img class="logo" src="assets/images/logo.png">
+        Project Name
+      </div>
+      <a href="#" class="item">Blog</a>
+      <a href="#" class="item">Articles</a>
+      <a href="#" class="ui right floated dropdown item" tabindex="0">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu" tabindex="-1">
+          <div class="item">Link Item</div>
+          <div class="item">Link Item</div>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <div class="item">Link Item</div>
+              <div class="item">Link Item</div>
+            </div>
+          </div>
+          <div class="item">Link Item</div>
+        </div>
+      </a>
+    </div>
+  </div>
+    
+    <div class="wrapper"> 
+    <div class="results">
+      <nav>
+        <button class="prev ui button">Précédent</button>
+        <button class="next ui button">Suivant</button>
+      </nav>
+      <section>
+      </section>  
+    </div>
+    </div>
+
+    <div class="wrapper">  
+          <div class="controls">      
+      <form>
+   
+    
+    <h1 class="ui center aligned header">Recherche Articles</h1>
+    <div class="ui container">
+  <div class="ui segments">
+    <div class="ui segment"><label for="search">Entrez un seul terme pour une recherche (Requis): </label>
+          <input class="search" type="text" id="search" required></div>
+    <div class="ui segment"><label for="start-date">Entrez une date de début : </label>
+          <input type="date" id="start-date" class="start-date" pattern="[0-9]{8}"></div>
+    <div class="ui segment"><label for="end-date">Entrez une date de fin : </label>
+          <input type="date" id="end-date" class="end-date" pattern="[0-9]{8}"></div>
+    <div class="ui segment"> <button class="submit ui button ">Recherche</button></div>
+  </div>
+</div>
+  
+      </form>
+    </div>
+</div>
+
+
+    
+  <div class="ui text container" style="margin-top: 100px; margin-bottom: 50px">  
+        <h1 class="ui header">The New YorK Times</h1>
+      <br>
+    <p>
+        The New York Times, abrégé en NY Times, NYT ou Times, est un quotidien new-yorkais distribué internationalement et l'un des plus prestigieux journaux américains.</p>
+      
+  <p>
+      Le groupe de presse The New York Times Company en est l'actionnaire unique depuis 2003. Il possède 18 autres journaux dont le New York Times International Edition — anciennement International Herald Tribune, de 1967 à 2013 — et le Boston Globe. Surnommé « The Gray Lady » pour sa mise en page immuable et le caractère circonspect de sa ligne éditoriale, le New York Times est considéré comme un journal de référence par les démocrates et les républicains modérés. Fondé en 1851, il est récompensé par 122 prix Pulitzer et emploie 1150 journalistes en 2010.</p>
+  <p>
+      Sa devise, affichée dans le coin supérieur gauche de la première page, est « All the News That's Fit to Print » (« Toutes les nouvelles qui méritent d'être imprimées »). Elle date du rachat du journal par Adolph Ochs en 1896 et fait référence à sa volonté de se différencier des quotidiens qui pratiquaient le journalisme jaune, comme le New York World et le New York Journal5. Depuis 1992, le directeur de publication est Arthur Ochs Sulzberger, Jr., arrière-petit-fils d'Adolph Ochs. Le contrôle de la direction du journal est assuré par le Trust familial Ochs-Sulzberger. </p>
+      
+      
+      
+    
+  </div>
+    
+      <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 1</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 2</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 3</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">SI6 - TD - API</h4>
+            <p>Grenier Florent</p>
+            <p>Motreuil Colin</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Plan de site</a>
+        <a class="item" href="#">Contact</a>
+        <a class="item" href="#">Termes et Conditions</a>
+        <a class="item" href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+      // Variables de l'URL et de la clé pour l'URL de demande
+
+  const baseURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
+  const key = 'G9qwwS1HZSOcAqQ5iMH78yKrru1GcpTJ';
+  let url;
+
+      // Récupérez des références à tous les éléments
+
+  const searchTerm = document.querySelector('.search');
+  const startDate = document.querySelector('.start-date');
+  const endDate = document.querySelector('.end-date');
+  const searchForm = document.querySelector('form');
+
+      //Variables bouton suivant et précédent
+      
+  const nextBtn = document.querySelector('.next');
+  const previousBtn = document.querySelector('.prev');
+
+  const section = document.querySelector('section');
+  const nav = document.querySelector('nav');
+
+    // Cachez les boutons "Précédent" / "Suivant"
+  nav.style.display = 'none';
+
+    // Définir le numéro de page initial
+  let pageNumber = 0;
+
+     // Contrôle la fonctionnalité
+      searchForm.addEventListener('submit', submitSearch);
+      nextBtn.addEventListener('click', nextPage);
+      previousBtn.addEventListener('click', previousPage);
+      
+      function submitSearch(e) {
+    pageNumber = 0;
+    fetchResults(e);
+      }   
+
+      function fetchResults(e) {
+          // On utilise preventDefault() afin d'éviter l'envoie vers notre serveur et le rafraîchissement de la page
+    e.preventDefault();
+
+  // On compose l'URL
+    url = baseURL + '?api-key=' + key + '&page=' + pageNumber + '&q=' + searchTerm.value + '&fq=document_type:("article")';
+
+    if(startDate.value !== '') {
+        url += '&begin_date=' + startDate.value;
+    };
+
+    if(endDate.value !== '') {
+        url += '&end_date=' + endDate.value;
+    };
+    
+    // On utilise fetch() pour envoyer la requête à l'API
+          fetch(url).then(function(result) {
+    return result.json();
+          }).then(function(json) {
+    displayResults(json);
+          });
+
+}
+      
+      function displayResults(json) {
+  while (section.firstChild) {
+      section.removeChild(section.firstChild);
+  }
+
+  var articles = json.response.docs;
+
+  if(articles.length === 10) {
+    nav.style.display = 'block';
+  } else {
+    nav.style.display = 'none';
+  }
+
+  if(articles.length === 0) {
+    var para = document.createElement('p');
+    para.textContent = 'Aucun résultat reçu.'
+    section.appendChild(para);
+  } else {
+    for(var i = 0; i < articles.length; i++) {
+      var article = document.createElement('article');
+      var heading = document.createElement('h2');
+      var link = document.createElement('a');
+      var img = document.createElement('img');
+      var para1 = document.createElement('p');
+      var para2 = document.createElement('p');
+      var clearfix = document.createElement('div');
+
+      var current = articles[i];
+      console.log(current);
+
+      link.href = current.web_url;
+      link.textContent = current.headline.main;
+      para1.textContent = current.snippet;
+      para2.textContent = 'Mots-clés : ';
+      for(var j = 0; j < current.keywords.length; j++) {
+        var span = document.createElement('span');
+        span.textContent += current.keywords[j].value + ' ';
+        para2.appendChild(span);
+      }
+
+      if(current.multimedia.length > 0) {
+        img.src = 'http://www.nytimes.com/' + current.multimedia[0].url;
+        img.alt = current.headline.main;
+      }
+
+      clearfix.setAttribute('class','clearfix');
+
+      article.appendChild(heading);
+      heading.appendChild(link);
+      article.appendChild(img);
+      article.appendChild(para1);
+      article.appendChild(para2);
+      article.appendChild(clearfix);
+      section.appendChild(article);
+    }
+  }
+}
+      
+      function nextPage(e) {
+        pageNumber++;
+        fetchResults(e);
+      };
+
+      function previousPage(e) {
+        if(pageNumber > 0) {
+            pageNumber--;
+        } else {
+        return;
+        }
+        fetchResults(e);
+      };
+      
+      
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+
+
+
+
+  </script>
+
+
+</body>
+</html>
+
+
